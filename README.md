@@ -17,4 +17,5 @@ Projeto implementado manualmente seguindo os padrões do desafio (MediatR, Repos
 - **Testes:** Testes de integração e testes unitários foram implementados usando xUnit e Moq (total de 45 testes para garantir 100% de cobertura das funcionalidades desenvolvidas).
 
 
+
 > Desenvolvido por: Guilherme Duarte.
