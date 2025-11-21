@@ -24,10 +24,10 @@ namespace Bernhoeft.GRT.Teste.Application.Handlers.Queries.v1
                 return OperationResult<UpdateAvisoResponse>.ReturnNotFound().AddMessage("Entidade a ser atualizada não encontrada");
 
             if (!string.IsNullOrEmpty(request.Mensagem))
+            {
                 aviso.Mensagem = request.Mensagem;
-
-            if (request.Ativo is not null)
-                aviso.Ativo = (bool)request.Ativo;
+                aviso.SetUpdatedNow();
+            }
 
             var entity = await _repository.UpdateAvisoAsync(aviso, cancellationToken);
 

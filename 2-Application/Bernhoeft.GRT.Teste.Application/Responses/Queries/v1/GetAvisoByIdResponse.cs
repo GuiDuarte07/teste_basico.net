@@ -1,18 +1,22 @@
 ﻿using Bernhoeft.GRT.ContractWeb.Domain.SqlServer.ContractStore.Entities;
 
-public class GetAvisoByIdResponse
+namespace Bernhoeft.GRT.Teste.Application.Responses.Queries.v1
 {
-    public int Id { get; set; }
-    public string Titulo { get; set; }
-    public string Mensagem { get; set; }
-    public bool Ativo { get; set; }
+    public class GetAvisoByIdResponse
+    {
+        public int Id { get; set; }
+        public string Titulo { get; set; }
+        public string Mensagem { get; set; }
+        public bool Ativo { get; set; }
 
-    public static implicit operator GetAvisoByIdResponse(AvisoEntity entity)
-        => new()
-        {
-            Id = entity.Id,
-            Titulo = entity.Titulo,
-            Mensagem = entity.Mensagem,
-            Ativo = entity.Ativo
-        };
+        public static implicit operator GetAvisoByIdResponse(AvisoEntity entity)
+            => new()
+            {
+                Id = entity.Id,
+                Titulo = entity.Titulo,
+                Mensagem = entity.Mensagem,
+                Ativo = entity.Ativo
+            };
+    }
 }
+

@@ -38,7 +38,7 @@ namespace Bernhoeft.GRT.Teste.Application.Handlers.Queries.v1
             if (entity == null)
                 return OperationResult<CreateAvisoResponse>.ReturnNotFound();
 
-            return OperationResult<CreateAvisoResponse>.ReturnCreated();
+            return OperationResult<CreateAvisoResponse>.ReturnOk((CreateAvisoResponse)entity);
         }
     }
 }

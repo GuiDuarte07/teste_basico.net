@@ -53,11 +53,12 @@ namespace Bernhoeft.GRT.Teste.Api.Controllers.v1
         /// <param name="request"></param>
         /// <param name="cancellationToken"></param>
         /// <returns>entidade criada</returns>
-        /// <response code="201">Criado com Sucesso.</response>
+        /// <response code="200">Criado com Sucesso.</response>
         [HttpPost]
-        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(IDocumentationRestResult<CreateAvisoResponse>))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IDocumentationRestResult<CreateAvisoResponse>))]
         public async Task<object> CreateAviso([FromBody] CreateAvisoRequest request, CancellationToken cancellationToken)
         {
+            //Status 201 também seria adequado aqui, mas OperationResult.ReturnCreated não espera um objeto de resposta.
             return await Mediator.Send(request, cancellationToken);
         }
 
