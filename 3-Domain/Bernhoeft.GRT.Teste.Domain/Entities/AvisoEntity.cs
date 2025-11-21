@@ -10,6 +10,17 @@
         public DateTime CriadoEm { get; private set; } = DateTime.Now;
         public DateTime? AtualizadoEm { get; private set; }
 
+        public static AvisoEntity CreateForTests(int id, string titulo, string mensagem)
+        {
+            return new AvisoEntity
+            {
+                Id = id,
+                Titulo = titulo,
+                Mensagem = mensagem,
+                Ativo = true
+            };
+        }
+
         public void SetUpdatedNow()
         {
             AtualizadoEm = DateTime.Now;

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32014.148
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11218.70 d18.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bernhoeft.GRT.Teste.Application", "2-Application\Bernhoeft.GRT.Teste.Application\Bernhoeft.GRT.Teste.Application.csproj", "{0602FD8F-F01D-4105-BCCA-838E0613F6C2}"
 EndProject
@@ -32,6 +32,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bernhoeft.GRT.Teste.Infra.Persistence.InMemory", "4-Infra\Bernhoeft.GRT.Teste.Infra.Persistence.InMemory\Bernhoeft.GRT.Teste.Infra.Persistence.InMemory.csproj", "{EB51A661-5DE1-4143-9325-5B8301DB61B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bernhoeft.GRT.Teste.UnitTests", "0-Tests\Bernhoeft.GRT.Teste.UnitTests\Bernhoeft.GRT.Teste.UnitTests.csproj", "{23A1CB22-D1B9-45A6-906B-B0372C426699}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{EB51A661-5DE1-4143-9325-5B8301DB61B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB51A661-5DE1-4143-9325-5B8301DB61B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB51A661-5DE1-4143-9325-5B8301DB61B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23A1CB22-D1B9-45A6-906B-B0372C426699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A1CB22-D1B9-45A6-906B-B0372C426699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A1CB22-D1B9-45A6-906B-B0372C426699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A1CB22-D1B9-45A6-906B-B0372C426699}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +74,7 @@ Global
 		{6AED83C0-2A9C-463E-933F-F0AAF3B383CD} = {29B24B44-4607-4037-B721-60549CDF3C77}
 		{AA90F1B1-E234-40B7-9828-39AD0DA1AD7E} = {540CD85B-8E33-45CE-886D-B45F639B4592}
 		{EB51A661-5DE1-4143-9325-5B8301DB61B4} = {A19C7D2A-2DB8-4954-A814-D4A4AF9C0155}
+		{23A1CB22-D1B9-45A6-906B-B0372C426699} = {29B24B44-4607-4037-B721-60549CDF3C77}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7ABD39E5-2584-4EB0-A485-EC3D2A6519CD}
